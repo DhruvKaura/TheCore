@@ -63,7 +63,7 @@ export default function FounderSection() {
 
     setIsOpen(true);
 
-    const chars = sectionRef.current?.querySelectorAll(".founder-reveal__char");
+    const chars = sectionRef.current?.querySelectorAll(".founder-reveal__char") ?? [];
 
     gsap.killTweensOf([founderCardRef.current, revealCardRef.current, chars]);
 
@@ -115,7 +115,7 @@ export default function FounderSection() {
 
     setIsOpen(false);
 
-    const chars = sectionRef.current?.querySelectorAll(".founder-reveal__char");
+    const chars = sectionRef.current?.querySelectorAll(".founder-reveal__char") ?? [];
 
     gsap.killTweensOf([founderCardRef.current, revealCardRef.current, chars]);
 

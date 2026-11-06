@@ -41,18 +41,21 @@ export default function ServicesHero() {
 
   useGSAP(
     () => {
+      const root = heroRef.current;
+      if (!root) return;
+
       const chars =
         gsap.utils.toArray<HTMLElement>(
           ".services-hero__char"
         );
 
       const description =
-        heroRef.current?.querySelector(
+        root.querySelectorAll(
           ".services-hero__description"
         );
 
       const image =
-        heroRef.current?.querySelectorAll(
+        root.querySelectorAll(
           ".services-hero__image"
         );
 

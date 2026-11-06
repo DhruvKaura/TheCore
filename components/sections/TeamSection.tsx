@@ -65,7 +65,7 @@ export default function TeamSection() {
     const chars =
       sectionRef.current?.querySelectorAll(
         ".team-section__reveal-char"
-      );
+      ) ?? [];
 
     gsap.killTweensOf([
       infoCardRef.current,
@@ -117,7 +117,7 @@ export default function TeamSection() {
     const chars =
       sectionRef.current?.querySelectorAll(
         ".team-section__reveal-char"
-      );
+      ) ?? [];
 
     gsap.killTweensOf([
       infoCardRef.current,

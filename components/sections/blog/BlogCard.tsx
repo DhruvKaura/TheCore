@@ -41,7 +41,7 @@ export default function BlogCard({
     return revealCardRef.current
       ?.querySelectorAll<HTMLElement>(
         ".blog-card__reveal-char"
-      );
+      ) ?? [];
   };
 
   const openCard = () => {

@@ -39,18 +39,21 @@ export default function AboutHero() {
 
   useGSAP(
     () => {
+      const root = heroRef.current;
+      if (!root) return;
+
       const chars =
         gsap.utils.toArray<HTMLElement>(
           ".about-hero__char"
         );
 
       const description =
-        heroRef.current?.querySelector(
+        root.querySelectorAll(
           ".about-hero__description"
         );
 
       const images =
-        heroRef.current?.querySelectorAll(
+        root.querySelectorAll(
           ".about-hero__image"
         );
 
