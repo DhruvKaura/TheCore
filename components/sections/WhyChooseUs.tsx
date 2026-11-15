@@ -80,12 +80,6 @@ const processSteps = [
   },
 ];
 
-const clients = [
-  "/images/clients/client-01.webp",
-  "/images/clients/client-02.webp",
-  "/images/clients/client-03.webp",
-];
-
 export default function WhyChooseUs() {
   const sectionRef = useRef<HTMLElement | null>(null);
 
@@ -526,29 +520,6 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="why-core__trust">
-              <div className="why-core__avatars">
-                {clients.map((client, index) => (
-                  <div className="why-core__avatar" key={client}>
-                    <Image
-                      src={client}
-                      alt={`Client ${index + 1}`}
-                      width={80}
-                      height={80}
-                      sizes="38px"
-                    />
-                  </div>
-                ))}
-              </div>
-
-              <div className="why-core__trust-copy">
-                <div className="why-core__stars" aria-label="5 stars">
-                  ★★★★★
-                </div>
-
-                <p>Trusted by clients worldwide</p>
-              </div>
-            </div>
           </article>
         </div>
 

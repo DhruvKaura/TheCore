@@ -37,12 +37,6 @@ const services = [
   },
 ];
 
-const clients = [
-  "/images/clients/client-01.webp",
-  "/images/clients/client-02.webp",
-  "/images/clients/client-03.webp",
-];
-
 function Characters({
   text,
   brand = false,
@@ -203,7 +197,7 @@ export default function Hero() {
           autoAlpha: 1,
           zIndex: 2,
         });
-        gsap.set(root.querySelectorAll(".hero-final__content, .hero-final__trust, .hero-final__copy, .hero-final__button, .final-char"), {
+        gsap.set(root.querySelectorAll(".hero-final__content, .hero-final__copy, .hero-final__button, .final-char"), {
           opacity: 1,
           x: 0,
           y: 0,
@@ -246,8 +240,6 @@ export default function Hero() {
         root.querySelector<HTMLElement>(".process-part--deliver");
       const finalContent =
         root.querySelector<HTMLElement>(".hero-final__content");
-      const finalTrust =
-        root.querySelector<HTMLElement>(".hero-final__trust");
       const finalCopy =
         root.querySelector<HTMLElement>(".hero-final__copy");
       const finalButton =
@@ -724,7 +716,7 @@ export default function Hero() {
           filter: "blur(4px)",
         });
 
-        const secondaryElements = [finalTrust, finalCopy, finalButton].filter(
+        const secondaryElements = [finalCopy, finalButton].filter(
           Boolean,
         );
 
@@ -760,7 +752,7 @@ export default function Hero() {
           position,
         );
 
-        const secondaryElements = [finalTrust, finalCopy, finalButton].filter(
+        const secondaryElements = [finalCopy, finalButton].filter(
           Boolean,
         );
 
@@ -1713,30 +1705,6 @@ export default function Hero() {
         <div className="hero-slide hero-slide--final">
           <div className="hero-final">
             <div className="hero-final__content">
-              <div className="hero-final__trust">
-                <div className="hero-final__avatars">
-                  {clients.map((client, index) => (
-                    <div className="hero-final__avatar" key={client}>
-                      <Image
-                        src={client}
-                        alt={`Client ${index + 1}`}
-                        width={256}
-                        height={256}
-                        sizes="36px"
-                      />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="hero-final__trust-copy">
-                  <div className="hero-final__stars" aria-label="5 stars">
-                    ★★★★★
-                  </div>
-
-                  <p>Trusted by clients worldwide</p>
-                </div>
-              </div>
-
               <h2 className="hero-final__heading" aria-label={finalHeading}>
                 <FinalAnimatedText text={finalHeading} />
               </h2>

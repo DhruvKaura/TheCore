@@ -9,12 +9,6 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const clientAvatars = [
-  "/images/clients/client-01.webp",
-  "/images/clients/client-02.webp",
-  "/images/clients/client-03.webp",
-];
-
 export default function WhoWeAre() {
   const sectionRef = useRef<HTMLElement | null>(
     null
@@ -191,52 +185,6 @@ export default function WhoWeAre() {
                   delivered across different
                   industries.
                 </p>
-
-              </div>
-
-              {/* =============================
-                  TRUSTED CLIENTS
-              ============================= */}
-
-              <div className="who-we-are__trust">
-
-                <div className="who-we-are__avatars">
-
-                  {clientAvatars.map(
-                    (avatar) => (
-                      <div
-                        key={avatar}
-                        className="who-we-are__avatar"
-                      >
-                        <Image
-                          src={avatar}
-                          alt=""
-                          fill
-                          sizes="38px"
-                        />
-                      </div>
-                    )
-                  )}
-
-                </div>
-
-                <div className="who-we-are__trust-copy">
-
-                  <div
-                    className="who-we-are__stars who-we-are__animate"
-                    aria-label="Five star rating"
-                  >
-                    ★★★★★
-                  </div>
-
-                  <p className="who-we-are__animate">
-                    <strong>
-                      Trusted by
-                    </strong>{" "}
-                    clients worldwide
-                  </p>
-
-                </div>
 
               </div>
 

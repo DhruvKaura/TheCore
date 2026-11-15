@@ -2384,92 +2384,6 @@ a {
 }
 
 /* =========================================================
-   TRUST ROW
-========================================================= */
-
-.hero-final__trust {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 14px;
-
-  margin-bottom: 28px;
-
-  will-change: transform, opacity;
-}
-
-.hero-final__avatars {
-  display: flex;
-
-  align-items: center;
-}
-
-.hero-final__avatar {
-  position: relative;
-
-  width: 36px;
-  height: 36px;
-
-  overflow: hidden;
-
-  border-radius: 50%;
-
-  border: 2px solid var(--core-white);
-
-  background: #eef5ff;
-}
-
-.hero-final__avatar:not(:first-child) {
-  margin-left: -9px;
-}
-
-.hero-final__avatar img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}
-
-.hero-final__trust-copy {
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: flex-start;
-
-  gap: 2px;
-
-  text-align: left;
-}
-
-.hero-final__stars {
-  color: var(--core-blue);
-
-  font-size: 13px;
-
-  line-height: 1;
-
-  letter-spacing: 1px;
-}
-
-.hero-final__trust-copy p {
-  margin: 0;
-
-  font-size: 14px;
-
-  line-height: 1.25;
-
-  font-weight: 400;
-
-  letter-spacing: -0.02em;
-
-  color: #676767;
-}
-
-/* =========================================================
    FINAL HEADING
 ========================================================= */
 
@@ -2928,30 +2842,6 @@ a {
 
   .hero-final__content {
     padding: 32px 20px;
-  }
-
-  .hero-final__trust {
-    gap: 11px;
-
-    margin-bottom: 23px;
-  }
-
-  .hero-final__avatar {
-    width: 30px;
-
-    height: 30px;
-  }
-
-  .hero-final__avatar:not(:first-child) {
-    margin-left: -7px;
-  }
-
-  .hero-final__stars {
-    font-size: 11px;
-  }
-
-  .hero-final__trust-copy p {
-    font-size: 11px;
   }
 
   .hero-final__heading {
@@ -4554,82 +4444,6 @@ a {
 }
 
 /* =========================================================
-   TRUST
-========================================================= */
-
-.founder-section__trust {
-  display: flex;
-
-  align-items: center;
-
-  gap: 13px;
-}
-
-.founder-section__avatars {
-  display: flex;
-
-  align-items: center;
-
-  flex-shrink: 0;
-}
-
-.founder-section__avatar {
-  position: relative;
-
-  width: 38px;
-  height: 38px;
-
-  overflow: hidden;
-
-  border-radius: 50%;
-
-  border: 2px solid #ffffff;
-
-  background: #e6edf5;
-}
-
-.founder-section__avatar:not(:first-child) {
-  margin-left: -8px;
-}
-
-.founder-section__avatar img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}
-
-.founder-section__trust-copy {
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: flex-start;
-
-  gap: 3px;
-}
-
-.founder-section__stars {
-  color: var(--core-blue);
-
-  font-size: 12px;
-
-  line-height: 1;
-
-  letter-spacing: 1px;
-}
-
-.founder-section__trust-copy p {
-  margin: 0;
-
-  font-size: 13px;
-
-  line-height: 1.2;
-
-  color: #676e76;
-}
-
-/* =========================================================
    TABLET
 ========================================================= */
 
@@ -4755,9 +4569,6 @@ a {
     font-size: 14px;
   }
 
-  .founder-section__trust {
-    margin-top: 70px;
-  }
 }
 
 /* =========================================================
@@ -4775,18 +4586,6 @@ a {
     padding: 22px 17px 18px;
   }
 
-  .founder-section__avatar {
-    width: 34px;
-    height: 34px;
-  }
-
-  .founder-section__trust {
-    gap: 10px;
-  }
-
-  .founder-section__trust-copy p {
-    font-size: 11px;
-  }
 }
 
 /* =========================================================
@@ -5162,80 +4961,6 @@ a {
 }
 
 /* =========================================================
-   TRUST AREA
-========================================================= */
-
-.why-core__trust {
-  display: flex;
-
-  align-items: center;
-
-  gap: 13px;
-
-  margin-top: 25px;
-}
-
-.why-core__avatars {
-  display: flex;
-
-  align-items: center;
-}
-
-.why-core__avatar {
-  width: 38px;
-  height: 38px;
-
-  overflow: hidden;
-
-  border-radius: 50%;
-
-  border: 2px solid #ffffff;
-
-  background: #e8edf3;
-}
-
-.why-core__avatar:not(:first-child) {
-  margin-left: -8px;
-}
-
-.why-core__avatar img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}
-
-.why-core__trust-copy {
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: flex-start;
-
-  gap: 3px;
-}
-
-.why-core__stars {
-  color: var(--core-blue);
-
-  font-size: 12px;
-
-  line-height: 1;
-
-  letter-spacing: 1px;
-}
-
-.why-core__trust-copy p {
-  margin: 0;
-
-  font-size: 13px;
-
-  line-height: 1.2;
-
-  color: #69717a;
-}
-
-/* =========================================================
    PROCESS CARD
 ========================================================= */
 
@@ -5503,10 +5228,6 @@ a {
 
   .why-core__stat-bottom p {
     font-size: 13px;
-  }
-
-  .why-core__trust-copy p {
-    font-size: 11px;
   }
 
   /* process */
@@ -13813,105 +13534,6 @@ a {
 
 
 /* =========================================================
-   TRUST
-========================================================= */
-
-.who-we-are__trust {
-  display: flex;
-
-  align-items: center;
-
-  gap: 13px;
-
-  margin-top: 30px;
-}
-
-
-/* =========================================================
-   AVATARS
-========================================================= */
-
-.who-we-are__avatars {
-  display: flex;
-
-  align-items: center;
-
-  flex-shrink: 0;
-}
-
-
-.who-we-are__avatar {
-  position: relative;
-
-  width: 38px;
-  height: 38px;
-
-  overflow: hidden;
-
-  border:
-    2px solid #ffffff;
-
-  border-radius: 50%;
-
-  background: #e2e6eb;
-}
-
-
-.who-we-are__avatar
-+
-.who-we-are__avatar {
-  margin-left: -10px;
-}
-
-
-.who-we-are__avatar img {
-  object-fit: cover;
-}
-
-
-/* =========================================================
-   TRUST COPY
-========================================================= */
-
-.who-we-are__trust-copy {
-  min-width: 0;
-}
-
-
-.who-we-are__stars {
-  margin-bottom: 3px;
-
-  color: var(--core-blue);
-
-  font-size: 13px;
-
-  line-height: 1;
-
-  letter-spacing: 2px;
-}
-
-
-.who-we-are__trust-copy p {
-  margin: 0;
-
-  font-size: 12px;
-
-  line-height: 1.25;
-
-  color: #7b838d;
-
-  white-space: nowrap;
-}
-
-
-.who-we-are__trust-copy strong {
-  color: var(--core-black);
-
-  font-weight: 500;
-}
-
-
-/* =========================================================
    TABLET
 ========================================================= */
 
@@ -14100,22 +13722,6 @@ a {
   }
 
 
-  .who-we-are__trust {
-    gap: 10px;
-  }
-
-
-  .who-we-are__avatar {
-    width: 34px;
-
-    height: 34px;
-  }
-
-
-  .who-we-are__trust-copy p {
-    font-size: 11px;
-  }
-
 }
 
 
@@ -14137,17 +13743,6 @@ a {
       18px;
   }
 
-
-  .who-we-are__trust {
-    align-items: flex-start;
-
-    flex-direction: column;
-  }
-
-
-  .who-we-are__trust-copy p {
-    white-space: normal;
-  }
 
 }
 

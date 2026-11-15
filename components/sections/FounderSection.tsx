@@ -11,12 +11,6 @@ gsap.registerPlugin(useGSAP);
 const revealText =
   "Gurdeep leads the vision, strategy and technology behind everything we build.";
 
-const clients = [
-  "/images/clients/client-01.webp",
-  "/images/clients/client-02.webp",
-  "/images/clients/client-03.webp",
-];
-
 export default function FounderSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const founderCardRef = useRef<HTMLDivElement | null>(null);
@@ -261,31 +255,6 @@ export default function FounderSection() {
               </p>
             </div>
 
-            {/* TRUST AREA */}
-
-            <div className="founder-section__trust">
-              <div className="founder-section__avatars">
-                {clients.map((client, index) => (
-                  <div className="founder-section__avatar" key={client}>
-                    <Image
-                      src={client}
-                      alt={`Client ${index + 1}`}
-                      width={80}
-                      height={80}
-                      sizes="38px"
-                    />
-                  </div>
-                ))}
-              </div>
-
-              <div className="founder-section__trust-copy">
-                <div className="founder-section__stars" aria-label="5 stars">
-                  ★★★★★
-                </div>
-
-                <p>Trusted by clients worldwide</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
