@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ContactProject from "@/components/sections/ContactProject";
+import WorkWebsiteGallery from "@/components/work/WorkWebsiteGallery";
 
 export const metadata: Metadata = {
   title: "AUREL Skincare — The Core Technology",
@@ -23,8 +24,8 @@ export default function AurelWorkPage() {
           </dl>
           <div className="work-detail__hero">
             <Image
-              src="/images/work/aurel/cover.webp"
-              alt="AUREL cleanser, clay mask and cream against a warm neutral backdrop"
+              src="/images/work/aurel/hero-wide.webp"
+              alt="AUREL campaign portrait with warm light and botanical shadows"
               fill
               preload
               sizes="(max-width: 767px) 100vw, 1500px"
@@ -45,15 +46,25 @@ export default function AurelWorkPage() {
           <div className="work-detail__browser">
             <div className="work-detail__browser-bar" aria-hidden="true"><span /><span /><span /></div>
             <Image
-              src="/images/work/aurel/website-shop.webp"
-              alt="AUREL skincare catalogue with routine filters, product prices and add-to-bag buttons"
-              width={1440}
-              height={1100}
-              sizes="(max-width: 767px) 100vw, 1200px"
+              src="/images/work/aurel/website-overview.webp"
+              alt="AUREL Skincare homepage with editorial imagery and links to the shop and brand story"
+              width={2880}
+              height={2000}
+              unoptimized
             />
           </div>
         </div>
       </section>
+
+      <WorkWebsiteGallery
+        project="aurel"
+        heading="A direct path from product discovery to the bag."
+        description="The catalogue groups skincare by routine, while the brand story gives the products and packaging more context."
+        previews={[
+          "AUREL catalogue with skincare category filters, prices and add-to-bag controls",
+          "AUREL Our Story page with brand copy and cleanser photography",
+        ]}
+      />
 
       <section className="work-detail__section work-detail__section--tint">
         <div className="work-detail__container">

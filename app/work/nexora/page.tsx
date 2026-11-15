@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ContactProject from "@/components/sections/ContactProject";
+import WorkWebsiteGallery from "@/components/work/WorkWebsiteGallery";
 
 export const metadata: Metadata = {
   title: "Nexora Education — The Core Technology",
@@ -42,15 +43,31 @@ export default function NexoraWorkPage() {
           </div>
           <div className="work-detail__browser">
             <div className="work-detail__browser-bar" aria-hidden="true"><span /><span /><span /></div>
-            <Image src="/images/work/nexora/website-home.webp" alt="Nexora Education homepage showing the main navigation, programme links and classroom photography" width={1440} height={1000} sizes="(max-width: 767px) 100vw, 1200px" />
+            <Image
+              src="/images/work/nexora/website-overview.webp"
+              alt="Nexora Education homepage with a programme call to action and classroom photography"
+              width={2880}
+              height={2000}
+              unoptimized
+            />
           </div>
         </div>
       </section>
 
+      <WorkWebsiteGallery
+        project="nexora"
+        heading="From choosing a programme to understanding the learning experience."
+        description="The interior pages explain the programme formats and show learners what to expect at each stage."
+        previews={[
+          "Nexora programme formats and the Future-Ready Leadership programme",
+          "Nexora learning experience showing the stages from framing a question to reflection",
+        ]}
+      />
+
       <section className="work-detail__section work-detail__section--tint">
         <div className="work-detail__container">
           <div className="work-detail__split-heading">
-            <p className="work-detail__section-label"><span aria-hidden="true">+</span> Our approach</p>
+            <p className="work-detail__section-label"><span aria-hidden="true">+</span> The visual direction</p>
             <div>
               <h2>A clear route from programme discovery to enquiry.</h2>
               <p>A cream and cobalt palette pairs with classroom photography and bold typography. Featured programmes are organised into cards, while dedicated pages make room for the learning approach and resources without crowding the homepage.</p>

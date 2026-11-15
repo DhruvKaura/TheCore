@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ContactProject from "@/components/sections/ContactProject";
+import WorkWebsiteGallery from "@/components/work/WorkWebsiteGallery";
 
 export const metadata: Metadata = {
   title: "AEVION — The Core Technology",
@@ -45,15 +46,25 @@ export default function AevionWorkPage() {
           <div className="work-detail__browser">
             <div className="work-detail__browser-bar" aria-hidden="true"><span /><span /><span /></div>
             <Image
-              src="/images/work/aevion/website-home.webp"
-              alt="AEVION homepage with a pale concrete tunnel, outlined wordmark and product introduction"
-              width={1440}
-              height={1050}
-              sizes="(max-width: 767px) 100vw, 1200px"
+              src="/images/work/aevion/website-overview.webp"
+              alt="AEVION homepage with the tunnel photograph and inspection-platform introduction"
+              width={2880}
+              height={2000}
+              unoptimized
             />
           </div>
         </div>
       </section>
+
+      <WorkWebsiteGallery
+        project="aevion"
+        heading="Give different audiences a clear way into the product."
+        description="The Technology page presents the platform itself. The Solutions page shows how it fits different inspection settings, from civil infrastructure to energy."
+        previews={[
+          "AEVION Technology page showing its industrial inspection platform",
+          "AEVION Solutions page showing the platform in an energy infrastructure setting",
+        ]}
+      />
 
       <section className="work-detail__final">
         <div className="work-detail__container">

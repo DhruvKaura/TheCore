@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ContactProject from "@/components/sections/ContactProject";
+import WorkWebsiteGallery from "@/components/work/WorkWebsiteGallery";
 
 export const metadata: Metadata = {
   title: "AUREVÉ — The Core Technology",
@@ -45,15 +46,25 @@ export default function AureveWorkPage() {
           <div className="work-detail__browser">
             <div className="work-detail__browser-bar" aria-hidden="true"><span /><span /><span /></div>
             <Image
-              src="/images/work/aureve/website-projects.webp"
-              alt="AUREVÉ projects page showing the studio wordmark and The Still House portfolio entry"
-              width={1440}
-              height={1400}
-              sizes="(max-width: 767px) 100vw, 1200px"
+              src="/images/work/aureve/website-overview.webp"
+              alt="AUREVÉ homepage with the studio wordmark and an interior-led hero"
+              width={2880}
+              height={2000}
+              unoptimized
             />
           </div>
         </div>
       </section>
+
+      <WorkWebsiteGallery
+        project="aureve"
+        heading="From a portfolio overview into a project."
+        description="Large images lead into individual project pages that give each space room for context and material details."
+        previews={[
+          "AUREVÉ projects index with The Still House at the top",
+          "The Still House project detail page with an interior photograph and project narrative",
+        ]}
+      />
 
       <section className="work-detail__section work-detail__section--tint">
         <div className="work-detail__container">

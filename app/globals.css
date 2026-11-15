@@ -830,6 +830,16 @@
   margin-top: 78px;
 }
 
+.work-detail__page-panels--pair {
+  background: #17212e;
+}
+
+@media (min-width: 768px) {
+  .work-detail__page-panels--pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .work-detail--lumifya,
 .work-detail--lumifya .work-detail__section--tint,
 .work-detail--lumifya .work-detail__final {
@@ -3569,19 +3579,13 @@ a {
   background: #17140c;
 }
 
-.work-card--starlight,
 .work-detail__hero--starlight {
   background: #80a792;
 }
 
-.work-card--starlight .work-card__image,
 .work-detail__hero--starlight img {
   padding: 6%;
   object-fit: contain;
-}
-
-.work-card--starlight .work-card__image {
-  padding-bottom: 22%;
 }
 
 .work-card--vitilia .work-card__image {
@@ -3598,6 +3602,10 @@ a {
 
 .work-card--brewora .work-card__image {
   object-position: center;
+}
+
+.work-card--aevion .work-card__image {
+  object-position: 85% center;
 }
 
 .work-card:hover .work-card__image {

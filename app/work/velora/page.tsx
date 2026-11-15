@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ContactProject from "@/components/sections/ContactProject";
+import WorkWebsiteGallery from "@/components/work/WorkWebsiteGallery";
 
 export const metadata: Metadata = {
   title: "Velora Chocolat — The Core Technology",
@@ -42,10 +43,26 @@ export default function VeloraWorkPage() {
           </div>
           <div className="work-detail__browser">
             <div className="work-detail__browser-bar" aria-hidden="true"><span /><span /><span /></div>
-            <Image src="/images/work/velora/website-shop.webp" alt="Velora Chocolat shop with category filters, a sort menu and chocolate product photography" width={1440} height={1000} sizes="(max-width: 767px) 100vw, 1200px" />
+            <Image
+              src="/images/work/velora/website-overview.webp"
+              alt="Velora Chocolat homepage introducing its craft and linking to the shop"
+              width={2880}
+              height={2000}
+              unoptimized
+            />
           </div>
         </div>
       </section>
+
+      <WorkWebsiteGallery
+        project="velora"
+        heading="Two ways into the chocolate range."
+        description="The shop supports browsing by chocolate type, while the collections page gives tasting boxes and gifts a more editorial presentation."
+        previews={[
+          "Velora shop with filters, sorting and chocolate product listings",
+          "Velora collections page with its signature tasting assortment",
+        ]}
+      />
 
       <section className="work-detail__section work-detail__section--tint">
         <div className="work-detail__container">

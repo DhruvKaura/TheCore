@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ContactProject from "@/components/sections/ContactProject";
+import WorkWebsiteGallery from "@/components/work/WorkWebsiteGallery";
 
 export const metadata: Metadata = {
   title: "Starlight Park — The Core Technology",
@@ -45,15 +46,25 @@ export default function StarlightWorkPage() {
           <div className="work-detail__browser">
             <div className="work-detail__browser-bar" aria-hidden="true"><span /><span /><span /></div>
             <Image
-              src="/images/work/starlight/website-home.webp"
-              alt="Starlight Park homepage with the floating island illustration and navigation for experiences, events and visiting"
-              width={1440}
-              height={1050}
-              sizes="(max-width: 767px) 100vw, 1200px"
+              src="/images/work/starlight/website-overview.webp"
+              alt="Starlight Park homepage with the floating park illustration and visitor navigation"
+              width={2880}
+              height={2000}
+              unoptimized
             />
           </div>
         </div>
       </section>
+
+      <WorkWebsiteGallery
+        project="starlight"
+        heading="Separate discovery from planning a visit."
+        description="The Experiences page introduces what to do in the park, while Visitor Info gives people one place to start planning their trip."
+        previews={[
+          "Starlight Park Experiences page introducing outdoor activities",
+          "Starlight Park Visitor Info page with visit-planning guidance",
+        ]}
+      />
 
       <section className="work-detail__final">
         <div className="work-detail__container">
