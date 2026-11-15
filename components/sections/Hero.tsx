@@ -556,12 +556,15 @@ export default function Hero() {
         }
       };
 
+      const scrollTimeline = (vars: gsap.TimelineVars) =>
+        gsap.timeline(vars).timeScale(1.15);
+
       const showEngineerStep = () => {
         if (!designPart || !engineerPart) return;
 
         isAnimating.current = true;
 
-        const tl = gsap.timeline({
+        const tl = scrollTimeline({
           onComplete: () => {
             sloganStep.current = 2;
             isAnimating.current = false;
@@ -595,7 +598,7 @@ export default function Hero() {
 
         isAnimating.current = true;
 
-        const tl = gsap.timeline({
+        const tl = scrollTimeline({
           onComplete: () => {
             sloganStep.current = 3;
             isAnimating.current = false;
@@ -640,7 +643,7 @@ export default function Hero() {
         isAnimating.current = true;
         const distance = getProcessTravel();
 
-        const tl = gsap.timeline({
+        const tl = scrollTimeline({
           onComplete: () => {
             sloganStep.current = 2;
             isAnimating.current = false;
@@ -685,7 +688,7 @@ export default function Hero() {
         isAnimating.current = true;
         const distance = getProcessTravel();
 
-        const tl = gsap.timeline({
+        const tl = scrollTimeline({
           onComplete: () => {
             sloganStep.current = 1;
             isAnimating.current = false;
@@ -824,7 +827,7 @@ export default function Hero() {
             zIndex: 3,
           });
 
-          const tl = gsap.timeline({
+          const tl = scrollTimeline({
             onComplete: () => {
               activeSlide.current = 2;
               isAnimating.current = false;
@@ -888,7 +891,7 @@ export default function Hero() {
             });
           }
 
-          const tl = gsap.timeline({
+          const tl = scrollTimeline({
             onComplete: () => {
               activeSlide.current = 1;
               isAnimating.current = false;
@@ -944,7 +947,7 @@ export default function Hero() {
             });
           }
 
-          const tl = gsap.timeline({
+          const tl = scrollTimeline({
             onComplete: () => {
               activeSlide.current = 3;
               isAnimating.current = false;
@@ -1006,7 +1009,7 @@ export default function Hero() {
             zIndex: 3,
           });
 
-          const tl = gsap.timeline({
+          const tl = scrollTimeline({
             onComplete: () => {
               activeSlide.current = 2;
               isAnimating.current = false;
@@ -1074,7 +1077,7 @@ export default function Hero() {
             zIndex: 2,
           });
 
-          const tl = gsap.timeline({
+          const tl = scrollTimeline({
             onComplete: () => {
               activeSlide.current = 4;
               sloganStep.current = 1;
@@ -1153,7 +1156,7 @@ export default function Hero() {
             });
           }
 
-          const tl = gsap.timeline({
+          const tl = scrollTimeline({
             onComplete: () => {
               activeSlide.current = 3;
               sloganStep.current = 0;
@@ -1229,7 +1232,7 @@ export default function Hero() {
             zIndex: 2,
           });
 
-          const tl = gsap.timeline({
+          const tl = scrollTimeline({
             onComplete: () => {
               activeSlide.current = 5;
               isAnimating.current = false;
@@ -1298,7 +1301,7 @@ export default function Hero() {
             zIndex: 3,
           });
 
-          const tl = gsap.timeline({
+          const tl = scrollTimeline({
             onComplete: () => {
               activeSlide.current = 4;
               sloganStep.current = 3;
@@ -1368,7 +1371,7 @@ export default function Hero() {
           zIndex: 2,
         });
 
-        const tl = gsap.timeline({
+        const tl = scrollTimeline({
           defaults: {
             duration: 1.45,
             ease: "power3.inOut",
@@ -1491,7 +1494,7 @@ export default function Hero() {
                 nextSection.getBoundingClientRect().top +
                 window.scrollY;
 
-              animatePageScroll(targetY, 1050, () => {
+              animatePageScroll(targetY, 900, () => {
                 // Keep input locked briefly after landing so residual
                 // trackpad momentum has time to die out.
                 releaseUnlockTimer = setTimeout(() => {
