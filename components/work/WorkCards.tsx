@@ -61,18 +61,82 @@ const projects = [
     external: false,
     cardClass: "work-card--goldify",
   },
+  {
+    title: "Nexora Education",
+    year: "2026",
+    category: "Education • Professional learning",
+    service: "Website Development",
+    image: "/images/work/nexora/cover.webp",
+    href: "/work/nexora",
+    external: false,
+    cardClass: "",
+  },
+  {
+    title: "Velora Chocolat",
+    year: "2026",
+    category: "Food & Beverage • E-commerce",
+    service: "Website & E-commerce Development",
+    image: "/images/work/velora/cover.webp",
+    href: "/work/velora",
+    external: false,
+    cardClass: "",
+  },
+  {
+    title: "AUREL Skincare",
+    year: "2026",
+    category: "Beauty & Skincare • E-commerce",
+    service: "E-commerce Development",
+    image: "/images/work/aurel/cover.webp",
+    href: "/work/aurel",
+    external: false,
+    cardClass: "",
+  },
+  {
+    title: "AUREVÉ",
+    year: "2026",
+    category: "Interior Design • Portfolio Website",
+    service: "Branding & Website Development",
+    image: "/images/work/aureve/cover.webp",
+    href: "/work/aureve",
+    external: false,
+    cardClass: "",
+  },
+  {
+    title: "Starlight Park",
+    year: "2026",
+    category: "Public Space • Visitor Website",
+    service: "Website Development",
+    image: "/images/work/starlight/cover.webp",
+    href: "/work/starlight",
+    external: false,
+    cardClass: "work-card--starlight",
+  },
+  {
+    title: "AEVION",
+    year: "2026",
+    category: "Industrial Technology • Product Showcase",
+    service: "Website Development",
+    image: "/images/work/aevion/cover.webp",
+    href: "/work/aevion",
+    external: false,
+    cardClass: "",
+  },
 ];
+
+export const workProjectCount = projects.length;
 
 export default function WorkCards({
   headingLevel: Heading = "h3",
   limit,
+  offset = 0,
 }: {
   headingLevel?: "h2" | "h3";
   limit?: number;
+  offset?: number;
 }) {
   return (
     <div className="recent-work__grid">
-      {projects.slice(0, limit).map((project) => (
+      {projects.slice(offset, limit === undefined ? undefined : offset + limit).map((project) => (
         <a
           key={project.title}
           href={project.href}

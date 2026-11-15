@@ -40,7 +40,9 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${service.title} | The Core Technology`,
+    title: slug === "web-design-development"
+      ? "Web Design & Development: Shopify & WordPress | The Core Technology"
+      : `${service.title} | The Core Technology`,
 
     description:
       service.shortDescription,

@@ -179,10 +179,10 @@ export const services: ServiceItem[] = [
     title: "Web Design & Development",
 
     shortDescription:
-      "We design and build high-performing websites that combine strategy, UX, visual design and modern development.",
+      "Web design and development for business websites, Shopify stores and WordPress sites. We build responsive websites and custom React and Next.js experiences.",
 
     subtitle:
-      "Your website should do more than just look good.",
+      "Responsive business websites, Shopify stores and WordPress sites built around what your visitors need to do.",
 
     price: "$2500",
 
@@ -199,6 +199,8 @@ export const services: ServiceItem[] = [
       "UX/UI",
       "Landing Pages",
       "Responsive Design",
+      "Shopify",
+      "WordPress",
       "Next.js",
       "React",
       "CMS",
@@ -207,40 +209,40 @@ export const services: ServiceItem[] = [
     ],
 
     introTitle:
-      "Digital experiences built to perform.",
+      "Web development for business websites and online stores",
 
     introLead:
-      "Great websites combine clarity, technology and purpose.",
+      "Choose a platform based on how you’ll sell, publish and grow.",
 
     introDescription:
-      "We create responsive digital experiences that communicate clearly, feel effortless to use and support the goals behind your business.",
+      "Whether you’re launching a first website or redesigning an existing one, we plan the site around how people find you and what they need next: compare your services, enquire or shop. We design for mobile and desktop from the start.",
 
     whatWeDoLead:
-      "Strategy, design and engineering working together.",
+      "Shopify, WordPress and custom web development",
 
     whatWeDoDescription:
-      "From the first wireframe to deployment, we approach your website as one connected digital product rather than a collection of isolated pages.",
+      "We help you choose Shopify for selling online, WordPress for teams that need to publish and edit content, or a custom build when you need a more tailored interface or integration.",
 
     whatWeDo: [
       {
-        title: "UX & Information Architecture",
+        title: "Responsive Website Design & Redesign",
         description:
-          "Structure and flows that help users understand where they are and what to do next.",
+          "We plan the sitemap, navigation and page layouts for business websites, portfolios and landing pages, with clear paths to enquire or buy on any screen.",
       },
       {
-        title: "Interface Design",
+        title: "Shopify Store Development",
         description:
-          "Distinctive layouts, responsive systems, typography and polished interactions.",
+          "We build Shopify storefronts with tailored themes, product and collection pages, and a shopping journey suited to your catalogue.",
       },
       {
-        title: "Frontend Development",
+        title: "WordPress Website Development",
         description:
-          "Modern React and Next.js implementations built with performance and maintainability in mind.",
+          "We build WordPress websites with reusable page layouts and an editing setup that lets your team update service pages, publish articles and manage content.",
       },
       {
-        title: "CMS & Integrations",
+        title: "Custom React & Next.js Development",
         description:
-          "Flexible content management and connections with the systems your business already uses.",
+          "For websites that need a custom interface or integrations, we use React and Next.js and connect a CMS where your team needs control over content.",
       },
     ],
 
@@ -252,6 +254,7 @@ export const services: ServiceItem[] = [
       "Frontend development",
       "CMS setup",
       "Performance optimisation",
+      "Technical SEO foundations",
       "Launch support",
     ],
 
@@ -287,7 +290,7 @@ export const services: ServiceItem[] = [
       {
         title: "Launch",
         description:
-          "We test, optimise and prepare the experience for production.",
+          "We check mobile layouts, page performance, titles, descriptions and internal links before launch. For redesigns, we also plan redirects for URLs that change.",
       },
     ],
 

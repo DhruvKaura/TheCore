@@ -3440,6 +3440,28 @@ a {
   margin: 0 auto;
 }
 
+.work-page__pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 20px;
+  margin-top: 40px;
+  color: #4d5560;
+  font-size: 14px;
+}
+
+.work-page__pagination a {
+  padding: 12px 20px;
+  border: 1px solid #d9dce1;
+  border-radius: 999px;
+  color: var(--core-black);
+}
+
+.work-page__pagination a:hover {
+  background: #f4f5f7;
+}
+
 .work-page__title {
   position: absolute;
 
@@ -3545,6 +3567,21 @@ a {
 
 .work-card--goldify {
   background: #17140c;
+}
+
+.work-card--starlight,
+.work-detail__hero--starlight {
+  background: #80a792;
+}
+
+.work-card--starlight .work-card__image,
+.work-detail__hero--starlight img {
+  padding: 6%;
+  object-fit: contain;
+}
+
+.work-card--starlight .work-card__image {
+  padding-bottom: 22%;
 }
 
 .work-card--vitilia .work-card__image {
